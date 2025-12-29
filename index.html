@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FinCerdas ID — Literasi Fintech & Keuangan</title>
+  <meta name="description" content="Platform edukasi literasi fintech dan keuangan: artikel, video, infografis, kuis gamifikasi, simulasi interaktif, dan planner personal." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand" role="banner" aria-label="FinCerdas ID">
+        <div class="brand__mark" aria-hidden="true">ƒ</div>
+        <div class="brand__text">
+          <div class="brand__name">FinCerdas ID</div>
+          <div class="brand__tag">Belajar fintech • rencana uang • aman digital</div>
+        </div>
+      </div>
+
+      <button id="btnMenu" class="btn btn--ghost topbar__menu" aria-label="Buka menu" aria-expanded="false">☰</button>
+
+      <nav id="nav" class="nav" aria-label="Navigasi utama">
+        <a href="#/beranda">Beranda</a>
+        <a href="#/belajar">Belajar</a>
+        <a href="#/kuis">Kuis</a>
+        <a href="#/simulasi">Simulasi</a>
+        <a href="#/planner">Planner</a>
+        <a href="#/keamanan">Keamanan & Lapor</a>
+        <a href="#/tentang">Tentang</a>
+      </nav>
+
+      <div class="hud" aria-label="Status gamifikasi">
+        <div class="pill" title="Level kamu"><span id="hudLevel">Lv 1</span></div>
+        <div class="pill" title="Poin kamu">⭐ <span id="hudPoints">0</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container main">
+    <div id="app" class="app" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__title">Catatan penting (disclaimer)</div>
+        <p class="muted">
+          FinCerdas ID adalah platform edukasi. Konten di sini <b>bukan</b> nasihat keuangan, investasi, pajak, maupun hukum.
+          Gunakan sebagai bahan belajar, dan selalu verifikasi ke sumber resmi (regulator/instansi terkait) sebelum mengambil keputusan finansial.
+        </p>
+      </div>
+      <div class="footer__right">
+        <div class="muted">© <span id="year"></span> FinCerdas ID (demo UAS)</div>
+        <div class="muted small">Data tersimpan lokal di perangkat (localStorage).</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
